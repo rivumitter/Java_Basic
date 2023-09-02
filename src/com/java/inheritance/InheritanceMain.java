@@ -30,6 +30,14 @@ public class InheritanceMain {
         // java doesn't allow multiple inh. parent1 -> child , parent2->child
         // bcz complier wont know which parent's method to override
 
+        // inheritance part 2
+
+        Student student1 = new Student("sch1","20/40","student1",12);
+
+        System.out.println(student1.getSchoolAddr());
+
+        student1.getTotalAddressOfSchool();
+
 
     }
 }
