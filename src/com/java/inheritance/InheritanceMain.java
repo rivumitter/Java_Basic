@@ -34,9 +34,10 @@ public class InheritanceMain {
 
         Student student1 = new Student("sch1","20/40","student1",12);
 
+
         System.out.println(student1.getSchoolAddr());
 
-        student1.getTotalAddressOfSchool();
+
 
 
     }

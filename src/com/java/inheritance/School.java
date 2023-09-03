@@ -2,8 +2,8 @@ package com.java.inheritance;
 
 public class School {
 
-    String schoolName;
-    String schoolAddr;
+    protected String schoolName;
+    public String schoolAddr;
 
 
     public School(String schoolName, String schoolAddr) {

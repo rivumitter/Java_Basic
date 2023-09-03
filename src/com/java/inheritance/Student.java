@@ -2,8 +2,8 @@ package com.java.inheritance;
 
 public class Student extends School{
 
-    String studentName;
-    int rollNumber;
+    private String studentName;
+    private int rollNumber;
 
     //whenevr u r defining child constructor first u have to call parent constructor
     public Student(String schoolName, String schoolAddr, String studentName, int rollNumber) {

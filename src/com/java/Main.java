@@ -1,5 +1,7 @@
 package com.java;
 
+import com.java.inheritance.Student;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +19,9 @@ public class Main {
         Customer customer1 = new Customer();
 
         customer1.setAge(10);
+
+        Student student = new Student("sch1","20/40","student1",12);
+
 
 
 
