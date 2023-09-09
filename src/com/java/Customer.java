@@ -9,7 +9,6 @@ public class Customer {
     // deafult and non-parameterised const.
     public Customer() {
     }
-
     //assignment
     // parametrised constructor
     public Customer(String name, String email, int age) {

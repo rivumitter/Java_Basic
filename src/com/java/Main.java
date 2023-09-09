@@ -1,6 +1,7 @@
 package com.java;
 
 import com.java.inheritance.Student;
+import com.java.statics.StaticImpl;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +23,7 @@ public class Main {
 
         Student student = new Student("sch1","20/40","student1",12);
 
+        StaticImpl.printStatic();
 
 
 
