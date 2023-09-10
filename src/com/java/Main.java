@@ -25,6 +25,10 @@ public class Main {
 
         StaticImpl.printStatic();
 
+        OverLoadingDemo overLoadingDemo = new OverLoadingDemo();
+
+
+
 
 
     }

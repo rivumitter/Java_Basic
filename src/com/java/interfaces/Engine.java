@@ -7,4 +7,9 @@ public interface Engine {
     // any implementing class of an interface are bound to override abstract methods
     void start(); // any method definition inside an interface is public abstract
     void stop(); // any method definition inside an interface is public abstract
+
+    // to have backward compatibility , without breaking implementing class we are adding functionality
+    default void antiLockBreakingSystem() {
+        System.out.println("default antiLockBreakingSystem");
+    }
 }
