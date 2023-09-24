@@ -5,15 +5,13 @@ public class Java8Main {
 
         // lambda expression
         // is an implementation of an abstract method of the functional interface
-        DemoFuncIntf demoFuncIntf = () -> {
-            System.out.println("calling demoCall from lambda");
-        };
+        DemoFuncIntf demoFuncIntf = a -> 11;
 
-        DemoFuncIntf demoFuncIntfTwo = () -> {
-            System.out.println("calling demoCall from lambda two");
-        };
+        DemoFuncIntf demoFuncIntfTwo = (a) -> 12;
 
-        demoFuncIntfTwo.demoCall();
+        int i = demoFuncIntfTwo.demoCall(5);
+
+        System.out.println(i);
 
 
         //

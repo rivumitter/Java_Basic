@@ -5,6 +5,6 @@ public interface DemoFuncIntf {
     //functional interface
     // any interface which has **only one** abstract method is called functional interface
 
-    void demoCall();
+    int demoCall(int a);
 
 }
