@@ -1,15 +1,17 @@
 package com.java.java_8.ds.list.demo;
 
+import java.util.Objects;
+
 public class Student {
 
     private String name;
     private int roll;
-    private int age;
+    private int standard;
 
-    public Student(String name, int roll, int age) {
+    public Student(String name, int roll, int standard) {
         this.name = name;
         this.roll = roll;
-        this.age = age;
+        this.standard = standard;
     }
 
     public String getName() {
@@ -28,12 +30,25 @@ public class Student {
         this.roll = roll;
     }
 
-    public int getAge() {
-        return age;
+    public int getStandard() {
+        return standard;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setStandard(int standard) {
+        this.standard = standard;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return roll == student.roll && standard == student.standard && Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, roll, standard);
     }
 
     @Override
@@ -41,7 +56,7 @@ public class Student {
         return "Student{" +
                 "name='" + name + '\'' +
                 ", roll=" + roll +
-                ", age=" + age +
+                ", standard=" + standard +
                 '}';
     }
 }

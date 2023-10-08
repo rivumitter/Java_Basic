@@ -61,12 +61,12 @@ public class DemoList {
 
         // using stream() api
 
-        /* empList.stream()
+         empList.stream()
                 .filter(employee -> employee.getEmpId() >= 1 && employee.getEmpId() <=15) // 1 , 5
                 .forEach(employee -> System.out.println(employee));
 
 
-         */
+
 
         // collect is a terminal op. By default Stream.filter() map(), .... , are ignored without terminal op.
         // Terminal op is responsible for invoking Stream().xyz methods
